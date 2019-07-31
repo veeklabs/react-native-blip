@@ -1,0 +1,87 @@
+{
+  "name": "react-native-blip-chat",
+  "version": "1.0.0",
+  "description": "Blip Chat integration for React Native",
+  "main": "index.js",
+  "scripts": {
+    "format": "yarn lint --fix",
+    "lint": "xo",
+    "release": "standard-version",
+    "commit": "git-cz"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veeklabs/reac-native-blip-chat.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-config-xo-react": "^0.20.0",
+    "eslint-config-xo-space": "^0.21.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "git-cz": "^3.2.1",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "standard-version": "^7.0.0",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "prettier": true,
+    "extensions": [
+      "js",
+      "jsx"
+    ],
+    "envs": [
+      "node",
+      "jest"
+    ],
+    "extends": [
+      "prettier",
+      "prettier/react",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "globals": [
+      "expect",
+      "it",
+      "describe",
+      "jest",
+      "test",
+      "jake",
+      "platform"
+    ],
+    "rules": {
+      "import/namespace": 0,
+      "capitalized-comments": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/no-unassigned-import": 0,
+      "no-useless-escape": 0,
+      "no-warning-comments": 0,
+      "react/display-name": 0,
+      "react/no-unescaped-entities": 0,
+      "react/prop-types": 0,
+      "unicorn/import-index": 0,
+      "react/no-deprecated": 0
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+}
