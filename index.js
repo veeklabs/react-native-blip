@@ -1,10 +1,11 @@
 
-import { NativeModules } from 'react-native';
+// import { NativeModules } from 'react-native';
 
-const { RNBlipChat } = NativeModules;
+// const { RNBlipChat } = NativeModules;
 
 export default {
   openThread: () => {
-    RNBlipChat.addEvent('Test');
+    // console.log(JSON.stringify(NativeModules), 'UHUHS');
+    // RNBlipChat.addEvent('Test');
   }
 }

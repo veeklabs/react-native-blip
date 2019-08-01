@@ -1,9 +1,9 @@
 
-#import "RNReactNativeBlipChat.h"
-#import "BlipChat/BlipChat.h"
+#import "RNBlipChat.h"
+#import <React/RCTLog.h>
 
 
-@implementation RNReactNativeBlipChat
+@implementation RNBlipChat
 
 - (dispatch_queue_t)methodQueue
 {
@@ -11,9 +11,9 @@
 }
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(addEvent:(NSString *)name)
+RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location)
 {
-  [BlipClient openBlipThreadWithMyView:self appKey:(NSString*) @"bm92YXZlZWs6NGEwMDY4NzktMWZjYS00ZjBkLThmNDEtYmJiMTg3MmE4NmMy" options:options error: nil];
+  RCTLogInfo(@"Pretending to create an event %@ at %@", name, location);
 }
 
 @end

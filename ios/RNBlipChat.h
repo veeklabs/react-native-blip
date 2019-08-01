@@ -5,7 +5,6 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNReactNativeBlipChat : NSObject <RCTBridgeModule>
+@interface RNBlipChat : NSObject <RCTBridgeModule>
 
 @end
-  
